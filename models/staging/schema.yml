@@ -1,0 +1,11 @@
+version: 2
+# de-zoomcamp-413005.homework.ext_green_tripdata
+sources:
+  - name: staging
+    database: de-zoomcamp-413005
+    schema: homework
+    
+    tables:
+    - name: ext_fhv_tripdata
+    - name: ext_green_tripdata
+    - name: ext_yellow_tripdata

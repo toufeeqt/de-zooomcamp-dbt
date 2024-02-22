@@ -43,5 +43,5 @@ SELECT
     trips_unioned.sr_flag,
     trips_unioned.affiliated_base_number
 from trips_unioned
-inner join dim_zones as pickup_zone  on trips_unioned.pickup_locationid = pickup_zone.location_id
-inner join dim_zones as dropoff_zone on trips_unioned.dropoff_locationid = dropoff_zone.location_id
+join dim_zones as pickup_zone  on trips_unioned.pickup_locationid = pickup_zone.location_id
+join dim_zones as dropoff_zone on trips_unioned.dropoff_locationid = dropoff_zone.location_id
